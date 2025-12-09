@@ -1,0 +1,15 @@
+# Environment files
+.env
+*.env
+.env.local
+.env.production
+.flaskenv
+venv
+
+# Database
+*.db
+*.sqlite3
+
+# Python
+__pycache__/
+*.pyc

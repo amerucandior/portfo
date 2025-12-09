@@ -1,0 +1,162 @@
+/* General styling */
+.highlight {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Mondrian Art */
+.grid-container {
+  width: 100%;
+  max-width: 460px;
+  background: #000;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1fr 0.5fr;
+  gap: 10px;
+  background: #000;
+  padding: 10px;
+  height: 400px;
+}
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1px;
+}
+.white {
+  background: #f0f1ec;
+}
+.red {
+  background: #e72f24;
+}
+.blue {
+  background: #004592;
+}
+.yellow {
+  background: #f9d01e;
+}
+.a {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.b {
+  grid-column: 1;
+  grid-row: 3 / span 2;
+}
+.c {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 3;
+}
+.d {
+  grid-column: 2;
+  grid-row: 3;
+}
+.e {
+  grid-column: 3;
+  grid-row: 4;
+}
+.f {
+  grid-column: 4;
+  grid-row: 4;
+}
+.g {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+/* Chessboard */
+.chess-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%; /* Make it responsive */
+  max-width: 300px; /* Maintain max width */
+  height: auto; /* Adjust height automatically */
+  aspect-ratio: 1 / 1; /* Maintain square shape */
+  border: 2px solid #333;
+  margin: 0 auto; /* Center the container */
+}
+
+.chess-container .white {
+  background-color: #f0d9b5;
+}
+
+.chess-container .black {
+  background-color: #b58863;
+}
+
+/* Kenyan Flag */
+.flag-container {
+  position: relative;
+  width: 100%; /* Make it responsive */
+  max-width: 300px; /* Maintain max width */
+  height: auto; /* Adjust height automatically */
+  aspect-ratio: 3 / 2; /* Maintain aspect ratio */
+  border: 2px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  flex-direction: column;
+}
+
+#black,
+#white,
+#red,
+#white2,
+#green {
+  width: 100%;
+}
+
+#black {
+  height: 30%;
+  background-color: #000000;
+}
+
+#white {
+  height: 5%;
+  background-color: #ffffff;
+}
+
+#red {
+  height: 30%;
+  background-color: #ce1126;
+}
+
+#white2 {
+  height: 5%;
+  background-color: #ffffff;
+}
+
+#green {
+  height: 30%;
+  background-color: #007a3d;
+}
+
+/* General text alignment */
+.text-justify {
+  text-align: justify !important;
+  text-justify: inter-word;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    justify-content: center;
+  }
+
+  button {
+    padding: 12px 28px;
+    border-radius: 20%;
+  }
+
+  .grid-container,
+  .chess-container,
+  .flag-container {
+    width: 100%;
+    max-width: none;
+  }
+}

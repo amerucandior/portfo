@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Ian Mwirigi - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="Ian Mwirigi — Project Manager & Software Developer. View projects, skills, and contact details. Specializes in Python, JavaScript, Django, Flask and modern web design." />
+    <meta name="keywords" content="Ian Mwirigi, portfolio, project management, software developer, Python, Django, Flask, JavaScript, HTML, CSS, Bootstrap" />
+    <meta name="author" content="Ian Mwirigi" />
+    <link rel="canonical" href="{{ url_for('my_home', _external=True) }}" />
+    <meta name="robots" content="my_home, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ian Mwirigi — Portfolio" />
+    <meta property="og:description" content="Project Manager & Software Developer. Browse projects, skills, and contact information." />
+    <meta property="og:url" content="{{ url_for('my_home', _external=True) }}" />
+    <meta property="og:image" content="{{ url_for('static', filename='images/ianmwirigi.jpeg', _external=True) }}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ian Mwirigi — Portfolio" />
+    <meta name="twitter:description" content="Project Manager & Software Developer. Browse projects, skills, and contact information." />
+    <meta name="twitter:image" content="{{ url_for('static', filename='images/ianmwirigi.jpeg', _external=True) }}" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ian Mwirigi",
+      "url": "{{ url_for('my_home', _external=True) }}",
+      "image": "{{ url_for('static', filename='images/ianmwirigi.jpeg', _external=True) }}",
+      "jobTitle": "Project Manager & Software Developer",
+      "description": "Full‑stack developer and project manager specializing in Python, JavaScript, Django, Flask, and modern web design.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "Kenya"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/ian-mwirigi-27939821a/",
+        "https://www.x.com/ian_is_crowned",
+        "https://github.com/amerucandior"
+      ],
+      "knowsAbout": [
+        "Python",
+        "JavaScript",
+        "Django",
+        "Flask",
+        "Project Management",
+        "Web Development"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "email": "ianmwirigi@outlook.com",
+      "telephone": "+254714225936",
+      "alumniOf": {
+      "@type": "Organization",
+      "name": "Jomo Kenyatta University of Agriculture and Technology"
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/portfolio.css') }}" />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <noscript
+      ><link rel="stylesheet" href="static/assets/css/noscript.css"
+    /></noscript>
+  </head>
+  <body class="is-preload">
+    <div id="wrapper">
+      <header id="header">
+        <div class="logo">
+          <span class="icon fa-user"></span>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <h1>Ian Mwirigi</h1>
+            <p>Project Management | Software Developer</p>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div id="main">
+        <article id="intro">
+          <h2 class="major">Intro</h2>
+          <span class="image main"
+            ><img src="static/images/ianmwirigi.jpeg" alt="ianmwirigiimage"
+          /></span>
+          <p>
+            A curious and ambitious problem-solver who builds and deploys
+            full-stack applications from concept to launch. I leverage a solid
+            foundation in software development, demonstrated through self-driven
+            projects like an algorithmic trading system and a responsive
+            portfolio website. With a complementary degree in Project
+            Management, I bring a unique blend of technical skill and
+            project-oriented thinking to every challenge, ensuring solutions are
+            not only well-built but also effectively delivered. Eager to apply
+            my passion for clean code and continuous learning to a dynamic
+            technical team.
+          </p>
+        </article>
+
+        <article id="work">
+          <h2 class="major">Work</h2>
+          <span class="image main"
+            ><img src="static/images/manatwork.jpg" alt="man at work image"
+          /></span>
+          <h3>
+            Logistics and Dispatch Assistant - The School Box (Sep 2025 - Oct
+            2025)
+          </h3>
+          <ul>
+            <li>
+              Printed customer orders, delivery notes, and receipts for daily
+              dispatch operations.
+            </li>
+            <li>
+              Recorded and tracked outgoing deliveries in the dispatch book to
+              maintain accurate documentation.
+            </li>
+            <li>
+              Printed additional operational documents as required to support
+              smooth order fulfilment.
+            </li>
+            <li>
+              Assisted in packaging and preparing orders for delivery to ensure
+              accuracy and timely dispatch.
+            </li>
+          </ul>
+
+          <h3>
+            Field Sales Representative (part-time role) - Red Giant Media Agency
+            (Feb 2025 - March 2025)
+          </h3>
+          <ul>
+            <li>
+              Exceeded monthly sales targets by an average of 20% through
+              strategic lead generation and effective client relationship
+              management.
+            </li>
+            <li>
+              Led a customer acquisition campaign focused on increasing brand
+              awareness, resulting in a 35% increase in brand visibility within
+              the target market.
+            </li>
+            <li>
+              Developed and maintained strong client relationships,
+              strengthening stakeholder engagement and negotiation skills.
+            </li>
+          </ul>
+          <h3>
+            Project Management Team Member (volunteer) - TLX (Feb 2024- May
+            2024)
+          </h3>
+          <ul>
+            <li>
+              Contributed to developing fundraising strategies that increased
+              contributions by 50%.
+            </li>
+            <li>
+              Coordinated stakeholder participation and communication, fostering
+              relationships that led to 3 long-term partnerships.
+            </li>
+            <li>
+              Assisted in writing high-impact proposals and managing donor
+              relations, securing KES 100K in funding.
+            </li>
+          </ul>
+          <h3>
+            Project Management Attache - KTDA FOUNDATION (Sep 2023 - Jan 2024)
+          </h3>
+          <ul>
+            <li>
+              Assisted in managing components of a KES 5M project, ensuring
+              milestone completion through meticulous tracking and coordination.
+            </li>
+            <li>
+              Identified and implemented workflow process optimizations,
+              reducing operational inefficiencies by 15%.
+            </li>
+            <li>
+              Supported risk assessment activities, contributing to the
+              mitigation of potential project delays.
+            </li>
+            <li>
+              Assisted in preparing project status reports and maintaining
+              documentation.
+            </li>
+          </ul>
+        </article>
+
+        <article id="about">
+          <h2 class="major">About</h2>
+          <span class="image main"
+            ><img src="/static/images/masomo.jpg" alt=""
+          /></span>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <b>Bachelor of Science in Project Management</b> - Jomo Kenyatta
+              University of Agriculture and Technology (JKUAT) (Sept 2021-Jun
+              2025)
+            </li>
+            <li>
+              <b>Professional Certificate in Agile and Scrum</b> - Institute of
+              Management, Technology & Finance (Feb 2025)
+            </li>
+            <li>
+              <b>Foundations of Leadership</b> - University Pathways
+              International (Oct 2024-- Present)
+            </li>
+          </ul>
+          <h3>Skills</h3>
+          <div class="table-wrapper">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>Project Management</strong>
+                    <ul>
+                      <li>Agile &amp; Scrum</li>
+                      <li>Stakeholder Management</li>
+                      <li>Risk Mitigation</li>
+                      <li>Workflow Optimization</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <strong>Technical Proficiency</strong>
+                    <ul>
+                      <li>Python</li>
+                      <li>JavaScript (ES6+)</li>
+                      <li>HTML, CSS</li>
+                      <li>Bash</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Frameworks</strong>
+                    <ul>
+                      <li>Django</li>
+                      <li>Flask</li>
+                      <li>React</li>
+                      <li>Next.js</li>
+                      <li>Node.js</li>
+                      <li>Bootstrap</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <strong>Tools &amp; Platforms</strong>
+                    <ul>
+                      <li>MS Office</li>
+                      <li>MS Project</li>
+                      <li>GIT</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Professional</strong>
+                    <ul>
+                      <li>Cross-Functional Collaboration</li>
+                      <li>Data-Driven Decision Making</li>
+                      <li>Attention to Detail</li>
+                      <li>Problem-Solving</li>
+                      <li>Quick Learner</li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article id="contact" class="contact-section">
+          <h2 class="major">Contact</h2>
+          <p class="contact-info"></p>
+            <b>Email:</b> <a href="mailto:ianmwirigi@outlook.com">ianmwirigi@outlook.com</a> <br />
+            <b>Location:</b> Nairobi, Kenya
+          </p>
+          <ul class="icons">
+            <li>
+              <a
+          href="https://www.linkedin.com/in/ian-mwirigi-27939821a/"
+          class="icon brands fa-linkedin"
+          aria-label="LinkedIn"
+          ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+          href="https://www.x.com/ian_is_crowned"
+          class="icon brands fa-twitter"
+          aria-label="Twitter"
+          ><span class="label">Twitter</span></a
+              >
+            </li>
+          </ul>
+        </article>
+
+        <article id="Portfolio">
+          <h2 class="major">Portfolio</h2>
+          <div class="container">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Simon Says Game <br />
+                <span class="text-body-secondary">
+                <a href="https://amerucandior.github.io/Simon-Says-Game/" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+                </span>
+              </h2>
+              <p class="lead">
+                <strong>Simon Game - Neon Arcade Edition</strong> I architected a fully interactive web game using JavaScript (ES6+) and jQuery to handle game state and DOM manipulation. The project reimagines the classic 80s "Simon" game with a modern "Glassmorphism" aesthetic.
+                <br/>
+                Key Features:
+                <ul>
+                  <li>State Management: Implemented logic to compare user input arrays against randomly generated game patterns in real-time.</li>
+                  <li>Data Persistence: Integrated the Browser localStorage API to save and retrieve high scores across sessions.</li>
+                  <li>Responsive Design: Optimized for both desktop (keyboard/mouse) and mobile (touch events) using CSS Grid and Flexbox.</li>
+                  <li>Audio/Visual Feedback: synchronized audio cues with CSS animations for an immersive arcade feel.</li>
+                </ul>
+              </p>
+              </div>
+              <div class="col-md-5 order-md-1 project-image-container">
+                <img src="/static/images/simon_says.png" 
+                   alt="Simon Says game screenshot" 
+                   class="img-fluid rounded shadow-sm hover-zoom" 
+                   loading="lazy">
+              </div>
+            </div>
+
+            <hr class="featurette-divider m-5" />
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">
+                  Mondrian-Inspired Art
+                </h2>
+                <p class="lead text-justify">
+                  <span class="highlight"
+                    >What if Mondrian had CSS at his fingertips?</span
+                  >
+                  <br />
+                  Reimagining Mondrian's iconic style for the digital age, this
+                  CSS grid composition brings his vision of geometric
+                  abstraction to life. Using pure CSS, I created a dynamic
+                  interplay of primary colors and stark lines that captures the
+                  essence of his revolutionary artistic philosophy while
+                  demonstrating the elegant simplicity of modern web design.
+                </p>
+              </div>
+
+              <div class="col-md-5">
+                <div class="grid-container">
+                  <div class="grid">
+                    <div class="block a white"></div>
+                    <div class="block b white"></div>
+                    <div class="block c red"></div>
+                    <div class="block d blue"></div>
+                    <div class="block e white"></div>
+                    <div class="block f white"></div>
+                    <div class="block g yellow"></div>
+                  </div>
+                </div>
+              </div>
+
+              <hr class="featurette-divider m-5" />
+
+              <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                  <h2 class="featurette-heading fw-normal lh-1">
+                    Tinder But for Dogs 🐾 <br />
+                    <span class="text-body-secondary">
+                      <a href="https://amerucandior.github.io/Tinder-For-Dogs/" 
+                         target="_blank"
+                         class="project-link hover-effect"
+                         title="View Live Demo">
+                        <i class="fas fa-paw"></i> View Live Demo
+                      </a>
+                    </span>
+                  </h2>
+                  <p class="lead">
+                    <span class="highlight">Finding furry friendships made easy!</span><br>
+                    A fun, interactive platform that helps dog owners connect their pets. Features responsive design
+                    and intuitive user interface.
+                  </p>
+                  <div class="tech-stack mb-3">
+                    <span class="tech-item" title="Bootstrap" data-bs-toggle="tooltip">
+                      <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
+                           alt="Bootstrap" 
+                           width="25" 
+                           height="25"
+                           loading="lazy" />
+                      Bootstrap
+                    </span>
+                    <span class="tech-item" title="HTML5" data-bs-toggle="tooltip">
+                      <img src="https://img.icons8.com/?size=100&id=zRvbzAjx4VWY&format=png" 
+                           alt="HTML" 
+                           width="25" 
+                           height="25"
+                           loading="lazy" />
+                      HTML5
+                    </span>
+                    <span class="tech-item" title="CSS3" data-bs-toggle="tooltip">
+                      <img src="https://img.icons8.com/?size=100&id=11260&format=png" 
+                           alt="CSS" 
+                           width="25" 
+                           height="25"
+                           loading="lazy" />
+                      CSS3
+                    </span>
+                  </div>
+                  <div class="key-features mt-3">
+                    <h5>Key Features:</h5>
+                    <ul class="feature-list">
+                      <li><i class="fas fa-check"></i> Responsive design for all devices</li>
+                      <li><i class="fas fa-check"></i> Interactive swipe interface</li>
+                      <li><i class="fas fa-check"></i> Modern gradient backgrounds</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="col-md-5 order-md-1">
+                  <img
+                    src="/static/images/Tin-Dog.png"
+                    alt="Tin-Dog website image"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+
+              <hr class="featurette-divider m-5" />
+
+              <div class="row featurette">
+                <!-- Left column (text) -->
+                <div class="col-md-7">
+                  <h2 class="featurette-heading fw-normal lh-1">Chess Board</h2>
+                    <p class="lead">
+                    <span class="highlight">Checkmate!!!</span><br>
+                    I've always admired the strategic depth of chess, which inspired me to recreate a 
+                    <a href="https://chess.com" target="_blank" class="chess-link">chess.com</a>-style board. 
+                    This project challenged me to master CSS Grid while enhancing my problem-solving skills. 
+                    The result is an interactive, responsive chessboard that demonstrates both technical precision 
+                    and visual appeal.
+                    </p>
+                    <div class="tech-stack mt-3">
+                    <span class="tech-item" title="CSS Grid">
+                      <img src="https://img.icons8.com/?size=100&id=11260&format=png" alt="CSS" width="25" height="25">
+                      CSS Grid
+                    </span>
+                    <span class="tech-item" title="Responsive Design">
+                      <img src="https://img.icons8.com/?size=100&id=12598&format=png" alt="Responsive" width="25" height="25">
+                      Responsive Design
+                    </span>
+                    </div>
+                </div>
+
+                <!-- Right column (chessboard) -->
+                <div
+                  class="col-md-5 d-flex justify-content-center align-items-start"
+                >
+                  <div class="chess-container">
+                    <!-- 64 squares -->
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                    <div class="black"></div>
+                    <div class="white"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="featurette-divider m-5" />
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">
+                  The Kenyan Flag😎
+                </h2>
+                <p class="lead">
+                    <span class="highlight">Proudly Kenyan 🇰🇪</span><br>
+                    I created my country's flag using pure CSS as a foundational exercise. 
+                    This project helped me master CSS positioning, color theory, and responsive design principles. 
+                    The interactive hover effects and smooth transitions demonstrate modern web design practices.
+                    <div class="tech-stack mt-3">
+                    <span class="tech-item" title="CSS">
+                      <img src="https://img.icons8.com/?size=100&id=11260&format=png" alt="CSS" width="25" height="25">
+                      Pure CSS
+                    </span>
+                    <span class="tech-item" title="Responsive Design">
+                      <img src="https://img.icons8.com/?size=100&id=12598&format=png" alt="Responsive" width="25" height="25">
+                      Responsive Design
+                    </span>
+                    </div>
+                </p>
+              </div>
+              <div
+                class="col-md-5 d-flex justify-content-center align-items-center"
+              >
+                <div class="flag-container">
+                  <div id="black"></div>
+                  <div id="white"></div>
+                  <div id="red"></div>
+                  <div id="white2"></div>
+                  <div id="green"></div>
+                </div>
+              </div>
+            </div>
+
+            <hr class="featurette-divider m-5" />
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Food-Truck Website <br />
+                <span class="text-body-secondary">
+                <a href="https://topboy.pythonanywhere.com" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> View Project
+                </a>
+                </span>
+              </h2>
+              <p class="lead">
+                <div class="tech-stack mb-3">
+                <span class="tech-item" title="Django">
+                  <img src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" 
+                     alt="Django" height="25" width="70">
+                  Django
+                </span>
+                <span class="tech-item" title="Bootstrap">
+                  <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" 
+                     alt="Bootstrap" width="25" height="25">
+                  Bootstrap
+                </span>
+                <span class="tech-item" title="CSS3">
+                  <img src="https://img.icons8.com/?size=100&id=11260&format=png" 
+                     alt="CSS" width="25" height="25">
+                  CSS3
+                </span>
+                </div>
+                <span class="highlight">Real-time food truck tracking made simple</span><br>
+                Built with Django for robust security and real-time location tracking capabilities. 
+                The application allows customers to:
+                <ul class="feature-list mt-2">
+                <li>Track food truck location in real-time</li>
+                <li>View menu and daily specials</li>
+                <li>Place orders securely</li>
+                </ul>
+              </p>
+              </div>
+              <div class="col-md-5 order-md-1">
+              <div class="project-image-container">
+                <img src="/static/images/Top-Boy.png" 
+                   alt="Food truck website screenshot" 
+                   class="img-fluid rounded shadow-sm hover-zoom" 
+                   loading="lazy">
+              </div>
+              </div>
+            </div>
+
+            <hr class="featurette-divider m-5" />
+
+            <div class="row featurette">
+              <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">
+                Portfolio Website <br />
+                <span class="text-body-secondary">
+                <a href="https://amerucan.pythonanywhere.com/" class="project-link">
+                  <i class="fas fa-external-link-alt"></i> View Live Site
+                </a>
+                </span>
+              </h2>
+              <p class="lead">
+                <div class="tech-stack mb-3">
+                <span class="tech-item" title="Flask">
+                  <img src="https://flask.palletsprojects.com/en/stable/_images/flask-name.svg" 
+                     alt="Flask" width="50" height="50">
+                  Flask
+                </span>
+                <span class="tech-item" title="HTML5">
+                  <img src="https://img.icons8.com/?size=100&id=zRvbzAjx4VWY&format=png" 
+                     alt="HTML" width="25" height="25">
+                  HTML5
+                </span>
+                <span class="tech-item" title="CSS3">
+                  <img src="https://img.icons8.com/?size=100&id=11260&format=png" 
+                     alt="CSS" width="25" height="25">
+                  CSS3
+                </span>
+                </div>
+                <span class="highlight">My first live deployment</span><br>
+                A minimalist portfolio showcasing my journey in web development. 
+                Built with Flask for its lightweight nature and rapid deployment capabilities.
+              </p>
+              </div>
+            </div>
+
+            <hr class="featurette-divider m-5" />
+          </div>
+        </article>
+      </div>
+
+      <footer id="footer">
+        <p class="copyright">
+          &copy; Ian Mwirigi. Design:
+        </p>
+      </footer>
+    </div>
+
+    <div id="bg"></div>
+
+    <script src="static/assets/js/jquery.min.js"></script>
+    <script src="./static/assets/js/browser.min.js"></script>
+    <script src="./static/assets/js/breakpoints.min.js"></script>
+    <script src="./static/assets/js/util.js"></script>
+    <script src="./static/assets/js/main.js"></script>
+  </body>
+</html>
